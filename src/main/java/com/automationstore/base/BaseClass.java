@@ -73,7 +73,7 @@ public class BaseClass {
 			WebDriverManager.edgedriver().setup();
 			driver=new EdgeDriver();
 		}else {
-			System.out.println("No broswser type sent");
+			//System.out.println("No broswser type sent");
 			Assert.assertFalse(false, "No broswser type sent");
 		}
 		
