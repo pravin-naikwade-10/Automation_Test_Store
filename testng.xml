@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationTestStore_Suite">
+  <listeners>
+		<listener class-name="com.automationstore.utility.ListenerClass"></listener>
+	</listeners>
+  <test thread-count="5" name="Test_All">
+  <parameter name="browserName" value="IE2"></parameter>
+    <classes>
+      <class name="com.autostore.testcases.RegisterNewUserTest"/>
+      <class name="com.autostore.testcases.EndToEndCheckOutTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- AutomationTestStore_Suite -->
